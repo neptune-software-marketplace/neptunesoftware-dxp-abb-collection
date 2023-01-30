@@ -1,0 +1,52 @@
+{
+	"id": "37040d11-2c46-ed11-a27c-dc984005a2a9",
+	"createdAt": "2022-10-07T10:37:44.190Z",
+	"createdBy": "luuk",
+	"fields": [
+		{
+			"id": "11e4b1d9-aeaa-4a2e-c6b1-d82343d19a7a",
+			"fieldName": "truckName",
+			"fieldType": "text",
+			"description": "Name of the truck",
+			"isNullable": false
+		},
+		{
+			"id": "00cff699-6ce8-46d6-ceb7-d324aff8d2ed",
+			"fieldName": "Status",
+			"fieldType": "text",
+			"description": "Status of garbage pickup",
+			"isNullable": false
+		},
+		{
+			"id": "67d1910c-7b44-4118-89a5-57b0483558e7",
+			"fieldName": "truckImage",
+			"fieldType": "text",
+			"description": "Base64",
+			"isNullable": true
+		},
+		{
+			"id": "e9ad8d6d-8e7f-493f-e772-23652a7110c5",
+			"fieldName": "location",
+			"fieldType": "text",
+			"description": "Location of Truck ( array form [latitude,longitude] )",
+			"isNullable": true
+		},
+		{
+			"id": "b2a48bd9-3f11-4e04-9924-1dae4e64ded5",
+			"fieldName": "assignedRoute",
+			"fieldType": "text",
+			"description": "The route assigned to the truck",
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "norskgjenvinningpoctrucks",
+	"description": "All garbage truck and route data",
+	"ver": "23.1.27.1432",
+	"enableAudit": false,
+	"includeDataInPackage": true,
+	"package": "e9b07409-4f9e-ed11-994a-0022489f9953",
+	"rolesRead": [],
+	"rolesWrite": []
+}

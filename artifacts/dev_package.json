@@ -1,0 +1,104 @@
+{
+	"id": "e9b07409-4f9e-ed11-994a-0022489f9953",
+	"createdAt": "2023-01-27T14:29:42.686Z",
+	"createdBy": "cezar.strugariu@neptune-software.com",
+	"git": {
+		"remote": "https://github.com/neptune-software-marketplace/neptunesoftware-dxp-abb-collection"
+	},
+	"name": "neptunesoftware-dxp-abb-collection",
+	"description": "DXP Collection Scenario",
+	"ver": "23.1.30.1517",
+	"enableCICD": true,
+	"apps": [],
+	"api": [
+		{
+			"id": "a69c3a67-3e49-ed11-a27c-dc984005a2a9",
+			"name": "API norskgjenvinningpocroutes",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "807b4028-9e48-ed11-a27c-dc984005a2a9",
+			"name": "NorskGjenRoute",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "1622823c-9e48-ed11-a27c-dc984005a2a9",
+			"name": "NorskGjenTruck",
+			"description": null,
+			"apiGroup": null
+		}
+	],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [
+		{
+			"id": "37040d11-2c46-ed11-a27c-dc984005a2a9",
+			"name": "norskgjenvinningpoctrucks",
+			"description": "All garbage truck and route data"
+		},
+		{
+			"id": "34a2c83e-2d46-ed11-a27c-dc984005a2a9",
+			"name": "norskgjenvinningpocroutes",
+			"description": null
+		}
+	],
+	"jsclass": [],
+	"jsscript_group": [],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [
+		{
+			"id": "f836a7ac-2d46-ed11-a27c-dc984005a2a9",
+			"description": "",
+			"name": "NorskGjenvinningPOCTile1"
+		},
+		{
+			"id": "e2b389f7-d397-ed11-994a-0022489f9953",
+			"description": "",
+			"name": "Collection_Services"
+		},
+		{
+			"id": "d232ea9d-2e46-ed11-a27c-dc984005a2a9",
+			"description": "",
+			"name": "NorskGjenvinningPOCTile3"
+		},
+		{
+			"id": "9cb070ec-2d46-ed11-a27c-dc984005a2a9",
+			"description": "",
+			"name": "NorskGjenvinningPOCTile4"
+		}
+	],
+	"category": [
+		{
+			"id": "718db7d1-d397-ed11-994a-0022489f9953",
+			"description": null,
+			"name": "Collection_Services_Scenario"
+		}
+	],
+	"launchpad": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [],
+	"events": [],
+	"media_library": [
+		{
+			"id": "811877E6-D697-ED11-994A-0022489F9953",
+			"updatedAt": "2023-01-30T15:06:53.116Z",
+			"name": "Collection",
+			"parent": null,
+			"package": "E9B07409-4F9E-ED11-994A-0022489F9953"
+		}
+	]
+}

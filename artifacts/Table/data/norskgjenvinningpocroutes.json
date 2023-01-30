@@ -1,0 +1,112 @@
+[
+	{
+		"id": "8fedb733-7bef-43c1-a366-51aae335ab84",
+		"createdAt": "1674116606605",
+		"updatedAt": "1674116606605",
+		"createdBy": "cezar.strugariu@neptune-software.com",
+		"updatedBy": "cezar.strugariu@neptune-software.com",
+		"Status": "Completed",
+		"Routes": "Blindern - Simensbråten",
+		"Waypoints": {
+			"latlong1": [
+				"59.94",
+				"10.72"
+			],
+			"latlong2": [
+				"59.93",
+				"10.73"
+			],
+			"latlong3": [
+				"59.93",
+				"10.76"
+			],
+			"latlong4": [
+				"59.91",
+				"10.72"
+			],
+			"latlong5": [
+				"59.91",
+				"10.75"
+			],
+			"latlong6": [
+				"59.91",
+				"10.73"
+			],
+			"latlong7": [
+				"59.9112",
+				"10.7309"
+			],
+			"latlong8": [
+				"59.89",
+				"10.76"
+			],
+			"latlong9": [
+				"59.8992",
+				"10.80"
+			],
+			"latlong10": [
+				"59.90",
+				"10.79"
+			],
+			"latlong11": [
+				"59.91657019729567",
+				"10.734337308348838"
+			]
+		}
+	},
+	{
+		"id": "16ee7d5d-551c-4d04-8c3d-9a3e356e6ddc",
+		"createdAt": "1674116606605",
+		"updatedAt": "1674116606605",
+		"createdBy": "cezar.strugariu@neptune-software.com",
+		"updatedBy": "cezar.strugariu@neptune-software.com",
+		"Status": "Assigned",
+		"Routes": "Sandaker - Risløkka ",
+		"Waypoints": {
+			"latlong1": [
+				"59.94",
+				"10.77"
+			],
+			"latlong2": [
+				"59.93",
+				"10.78"
+			],
+			"latlong3": [
+				"59.9355",
+				"10.7898"
+			],
+			"latlong4": [
+				"59.9381",
+				"10.7967"
+			],
+			"latlong5": [
+				"59.9368",
+				"10.7968"
+			],
+			"latlong6": [
+				"59.9320",
+				"10.7999"
+			],
+			"latlong7": [
+				"59.9253",
+				"10.8121"
+			],
+			"latlong8": [
+				"59.9243",
+				"10.825"
+			],
+			"latlong9": [
+				"59.9284",
+				"10.8308"
+			],
+			"latlong10": [
+				"59.9351",
+				"10.8261"
+			],
+			"latlong11": [
+				"59.928743409390876",
+				"10.806827712475828"
+			]
+		}
+	}
+]

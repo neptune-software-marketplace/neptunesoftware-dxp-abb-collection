@@ -1,0 +1,352 @@
+{
+	"id": "1622823c-9e48-ed11-a27c-dc984005a2a9",
+	"createdAt": "2022-10-10T13:19:58.586Z",
+	"createdBy": "terry.avgenikou@neptune-software.com",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "4f7eaeac-c138-4117-c410-ee0b58254e95",
+			"path": "/norskgjenvinningpoctrucks",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				},
+				{
+					"name": "select",
+					"description": "fieldName1,fieldName2,fieldName3"
+				},
+				{
+					"name": "take",
+					"description": "Limit (paginated) - max number of entities that should be taken"
+				},
+				{
+					"name": "skip",
+					"description": "Offset (paginated) from where entities should be taken"
+				},
+				{
+					"name": "order",
+					"description": "{\"fieldName1\": \"ASC\", \"fieldName2\": \"DESC\"}"
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "norskgjenvinningpoctrucks"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "d439afcd-f391-4f2c-fa68-e908c9c82ace",
+			"path": "/norskgjenvinningpoctrucks",
+			"method": "PUT",
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"objectType": "array",
+					"name": "norskgjenvinningpoctrucks"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "norskgjenvinningpoctrucks"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "2687f04f-d09a-4c46-c901-e66e173c357e",
+			"path": "/norskgjenvinningpoctrucks",
+			"method": "POST",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [
+				{
+					"objectType": "array",
+					"name": "norskgjenvinningpoctrucks"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "norskgjenvinningpoctrucks"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "1fce8104-dd00-4c08-e97b-55e6a4199ff6",
+			"path": "/norskgjenvinningpoctrucks",
+			"method": "DELETE",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "norskgjenvinningpoctrucks"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "15b2f756-3c4b-4ee2-fbce-fd377ba4dc48",
+			"path": "/norskgjenvinningpoctrucks/count",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "count"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "894e618b-a3b8-4f2f-d473-11dad3ae17d9",
+			"name": "norskgjenvinningpoctrucks",
+			"properties": [
+				{
+					"id": "c30571cd-b9e9-48b3-b461-b82c1ba1184d",
+					"parent": "",
+					"name": "id",
+					"description": "Unique record ID",
+					"objectType": "string"
+				},
+				{
+					"id": "80722bb4-1153-4799-c2b9-76da3ad5a9c9",
+					"parent": "",
+					"name": "truckName",
+					"description": "Name of the truck",
+					"objectType": "string"
+				},
+				{
+					"id": "4ffe2a5b-8381-4339-fe02-8fef0d1350c3",
+					"parent": "",
+					"name": "Status",
+					"description": "Status of garbage pickup",
+					"objectType": "string"
+				},
+				{
+					"id": "3d45c459-bb6d-4dfc-9721-12b657db8bd3",
+					"parent": "",
+					"name": "truckImage",
+					"description": "Base64",
+					"objectType": "string"
+				},
+				{
+					"id": "2fc24401-77da-4391-e19e-486d35f8d62b",
+					"parent": "",
+					"name": "location",
+					"description": "Location of Truck ( array form [latitude,longitude] )",
+					"objectType": "string"
+				},
+				{
+					"id": "4b726348-bbf4-4100-ad5d-fa262334f734",
+					"parent": "",
+					"name": "createdAt",
+					"description": "Date when record was created",
+					"objectType": "number"
+				},
+				{
+					"id": "9185afea-fdc6-4096-d161-fb11006b2fce",
+					"parent": "",
+					"name": "createdBy",
+					"description": "Created By",
+					"objectType": "string"
+				},
+				{
+					"id": "208da5ac-6093-44da-a685-b707382f10d0",
+					"parent": "",
+					"name": "updatedAt",
+					"description": "Date when record was updated",
+					"objectType": "number"
+				},
+				{
+					"id": "c0662620-7bd4-4d09-d516-eb5838148822",
+					"parent": "",
+					"name": "updatedBy",
+					"description": "Updated By",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "31a43fa9-61b3-4789-d3e9-410428daed7e",
+			"name": "Error",
+			"properties": [
+				{
+					"id": "fbf97690-719b-4f18-abc4-4d264b866dd1",
+					"parent": "",
+					"name": "status",
+					"objectType": "string"
+				},
+				{
+					"id": "2ff6e231-9a30-4833-fccd-04eca062aa09",
+					"parent": "",
+					"name": "message",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "34e1af43-0c41-4c9b-a30d-d80eeae8145a",
+			"name": "count",
+			"properties": [
+				{
+					"id": "21b8d23d-642a-4706-9efa-353f03db6d0b",
+					"parent": "",
+					"name": "count",
+					"objectType": "number",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "NorskGjenTruck",
+	"endpoint": "/api/entity",
+	"ver": "23.1.27.1433",
+	"version": null,
+	"description": null,
+	"mediaType": "application/json",
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "table",
+	"about": "",
+	"enableProxy": false,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "e9b07409-4f9e-ed11-994a-0022489f9953",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}
