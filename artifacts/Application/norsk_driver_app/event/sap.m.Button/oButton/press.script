@@ -1,0 +1,26 @@
+let final_data = {}
+
+final_data.id = oTextIdHidden.getText();
+
+console.log(final_data.id);
+
+// Add attributes to the Object, based on the inputs
+//final_data.Status = "Complete";
+
+// Assign the data object to "Options"
+//var options = { data: final_data };
+
+var options = {
+    data: {
+        "id": final_data.id,
+        "Status": "Completed",
+    }
+};
+
+// Log the Object
+console.log(final_data);
+
+// Trigger the API and pass the "Options"
+apioRestAPICompleteRoute(options);
+
+sap.m.MessageToast.show("Route Completed");

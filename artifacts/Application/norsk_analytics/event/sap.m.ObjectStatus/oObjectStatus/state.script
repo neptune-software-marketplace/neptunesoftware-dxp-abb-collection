@@ -1,0 +1,14 @@
+if (typeof Status === "undefined" || Status === null || Status === "") { return; }  
+var formattedText = Status; 
+
+if(Status === "Assigned"){
+    formattedText = "Information";
+}
+if(Status === "Unassigned"){
+    formattedText = "None";
+}
+if(Status === "Completed"){
+    formattedText = "Success";
+}
+
+return formattedText;

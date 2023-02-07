@@ -1,0 +1,7 @@
+.mainPage{
+    background-color: white;
+}
+
+.highcharts-credits{
+    display: none;
+}

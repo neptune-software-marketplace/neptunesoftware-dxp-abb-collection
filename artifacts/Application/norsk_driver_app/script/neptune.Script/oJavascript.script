@@ -1,0 +1,29 @@
+apioRestAPIGetRoutes();
+
+var route;
+var Map;
+
+if (sap.n) {
+    var localViewID = this.getId();
+    console.log(localViewID);
+}
+
+var jobLocatorMapDiv = jobLocatorMap.getDomRef();
+console.log(jobLocatorMapDiv);
+
+if (jobLocatorMapDiv === null) {
+    // --- Build Map ---
+    console.log("Build the Map")
+
+    var map = L.map('map');
+
+    if (sap.n) {
+        var reference = (localViewID + '--jobLocatorMap');
+    } else {
+        var reference = ('jobLocatorMap');
+    }
+
+} else {
+    console.log("Error");
+}
+

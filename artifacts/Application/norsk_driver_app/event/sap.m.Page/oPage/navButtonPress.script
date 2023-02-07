@@ -1,0 +1,6 @@
+//window.location.reload()
+//oPage.getModel().updateBindings();
+//oPage.rerender();
+//route1.spliceWaypoints(0, 2);
+
+oApp.backToPage(mainListPage);

@@ -1,0 +1,188 @@
+// Get Binding Context
+var context = oEvent.oSource.getBindingContext();
+// Get Entire Model
+var data = JSON.parse(JSON.stringify(context.getObject()));
+console.log("--- Page Data ---");
+console.log(data);
+
+if (data.Status === "Assigned") {
+    // // Navigate
+    oApp.to(oPage);
+} else {
+    // Use MessageToast
+    sap.m.MessageToast.show("This route has been completed");
+}
+
+
+
+
+oPage.setTitle(data.Routes);
+oTextIdHidden.setText(data.id);
+
+/*----------------------------------------------------*/
+//Selecting the lat and long from the JSON for route 1
+var latlong1 = data.Waypoints.latlong1;
+var latlong2 = data.Waypoints.latlong2;
+var latlong3 = data.Waypoints.latlong3;
+var latlong4 = data.Waypoints.latlong4;
+var latlong5 = data.Waypoints.latlong5;
+var latlong6 = data.Waypoints.latlong6;
+var latlong7 = data.Waypoints.latlong7;
+var latlong8 = data.Waypoints.latlong8;
+var latlong9 = data.Waypoints.latlong9;
+var latlong10 = data.Waypoints.latlong10;
+var latlong11 = data.Waypoints.latlong11;
+
+console.log(latlong1);
+//Selecting the lat and long in the array
+var lat1 = latlong1[0];
+var long1 = latlong1[1];
+
+var lat2 = latlong2[0];
+var long2 = latlong2[1];
+
+var lat3 = latlong3[0];
+var long3 = latlong3[1];
+
+var lat4 = latlong4[0];
+var long4 = latlong4[1];
+
+var lat5 = latlong5[0];
+var long5 = latlong5[1];
+
+var lat5 = latlong5[0];
+var long5 = latlong5[1];
+
+var lat6 = latlong6[0];
+var long6 = latlong6[1];
+
+var lat7 = latlong7[0];
+var long7 = latlong7[1];
+
+var lat8 = latlong8[0];
+var long8 = latlong8[1];
+
+var lat9 = latlong9[0];
+var long9 = latlong9[1];
+
+var lat10 = latlong10[0];
+var long10 = latlong10[1];
+
+var lat11 = latlong11[0];
+var long11 = latlong11[1];
+/*----------------------------------------------------*/
+
+var truck1 = L.icon({
+    iconUrl: 'https://gtmdemosystem.neptune-software.cloud/media/root/Luuk%20W%C3%B6sten/Norsk%20gjenvinning/MicrosoftTeams-image (2).png',
+    iconSize: [50, 27],
+    iconAnchor: [22, 94],
+    popupAnchor: [-3, -76],
+    //shadowUrl: 'my-icon-shadow.png',
+    shadowSize: [68, 95],
+    shadowAnchor: [22, 94]
+});
+
+var marker;
+var marker1;
+
+
+// var truck2 = L.icon({
+//     iconUrl: 'https://gtmdemosystem.neptune-software.cloud/media/root/Luuk%20W%C3%B6sten/Norsk%20gjenvinning/MicrosoftTeams-image (2).png',
+//     iconSize: [50, 27],
+//     iconAnchor: [22, 94],
+//     popupAnchor: [-3, -76],
+//     //shadowUrl: 'my-icon-shadow.png',
+//     shadowSize: [68, 95],
+//     shadowAnchor: [22, 94]
+// });
+
+setTimeout(function () {
+
+    if (Map === undefined) {
+
+
+        Map = L.map(reference);
+        console.log(Map);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(Map);
+
+        route ? route.remove() : "";
+        route = L.Routing.control({
+            waypoints: [
+                L.latLng(lat1, long1),
+                L.latLng(lat2, long2),
+                L.latLng(lat3, long3),
+                L.latLng(lat4, long4),
+                L.latLng(lat5, long5),
+                L.latLng(lat6, long6),
+                L.latLng(lat7, long7),
+                L.latLng(lat8, long8),
+                L.latLng(lat9, long9),
+                L.latLng(lat10, long10)
+            ],
+            lineOptions: {
+                styles: [{ color: '#4294cf', opacity: 1, weight: 5 }]
+            },
+            routeWhileDragging: true
+        }).addTo(Map);
+
+
+        var marker = L.marker([lat11, long11], { icon: truck1 }).addTo(Map);
+
+
+        //Map.removeLayer(marker);
+
+        if (marker != undefined) {
+            Map.removeLayer(marker1);
+        }
+
+
+    } else {
+        route ? route.remove() : "";
+        route = L.Routing.control({
+            waypoints: [
+                L.latLng(lat1, long1),
+                L.latLng(lat2, long2),
+                L.latLng(lat3, long3),
+                L.latLng(lat4, long4),
+                L.latLng(lat5, long5),
+                L.latLng(lat6, long6),
+                L.latLng(lat7, long7),
+                L.latLng(lat8, long8),
+                L.latLng(lat9, long9),
+                L.latLng(lat10, long10)
+            ],
+            lineOptions: {
+                styles: [{ color: '#4294cf', opacity: 1, weight: 5 }]
+            },
+            routeWhileDragging: true
+        }).addTo(Map);
+
+
+        var marker1 = L.marker([lat11, long11], { icon: truck1 }).addTo(Map);
+
+
+        // Map.on('click', function () {
+        //     Map.removeLayer(marker1);
+        // });
+        console.log("marker");
+        console.log(marker);
+        if (marker != undefined) {
+            Map.removeLayer(marker1);
+        }
+
+        Map.setView(route, truck1);
+
+    }
+
+
+}, 500);
+
+
+//route1.spliceWaypoints(0, 10);
+
+
+
+//apioRestAPIGetMap1();

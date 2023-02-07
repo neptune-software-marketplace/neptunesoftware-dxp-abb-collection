@@ -1,0 +1,15 @@
+var binding = oTable.getBinding("items");
+
+var filters = [];
+filters.push(new sap.ui.model.Filter("Routes", "Contains", this.getValue()));
+filters.push(new sap.ui.model.Filter("Status", "Contains", this.getValue()));
+//filters.push(new sap.ui.model.Filter("VBAKCMWAE", "Contains", this.getValue()));
+//filters.push(new sap.ui.model.Filter("VBUKLFSTK", "Contains", this.getValue()));
+
+var aFilter = filters;
+
+var filter = new sap.ui.model.Filter({
+    filters: aFilter,
+    and: false
+});
+binding.filter([filter]);

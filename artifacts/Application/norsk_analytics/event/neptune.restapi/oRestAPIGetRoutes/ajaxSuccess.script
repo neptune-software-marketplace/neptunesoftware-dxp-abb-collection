@@ -1,0 +1,73 @@
+var responseData = JSON.parse(xhr.responseText);
+
+RESULT = responseData;
+
+console.log(RESULT);
+
+let counterA = 0;
+let counterB = 0;
+let counterC = 0;
+
+for (let i = 0; i < RESULT.length; i++) {
+
+    console.log(RESULT[i])
+
+    if (RESULT[i].Status === "Assigned")
+        counterA++;
+
+    if (RESULT[i].Status === "Unassigned")
+        counterB++;
+
+    if (RESULT[i].Status === "Completed")
+        counterC++;
+
+}
+
+console.log("Assigned");
+console.log(counterA);
+console.log("Unassigned");
+console.log(counterB);
+console.log("Completed");
+console.log(counterC);
+
+Highcharts.setOptions({
+    colors: ['#053b70', '#6c6f72', '#107e3e']
+});
+
+Highcharts.chart('container1', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie'
+    },
+    title: {
+        text: RESULT.length + " Routes"
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: false
+            },
+            showInLegend: true
+        }
+    },
+    series: [{
+        name: 'Routes',
+        colorByPoint: true,
+        data: [{
+            name: counterA + ' Assigned',
+            y: counterA,
+            sliced: true,
+            selected: true
+        }, {
+            name: counterB + ' Unassigned',
+            y: counterB
+        }, {
+            name: counterC + ' Completed',
+            y: counterC
+        }]
+    }]
+});

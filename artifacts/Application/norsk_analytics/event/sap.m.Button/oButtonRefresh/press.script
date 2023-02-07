@@ -1,0 +1,2 @@
+apioRestAPIGetRoutes();
+sap.m.MessageToast.show("Analytics refreshed successfully");

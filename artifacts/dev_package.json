@@ -7,9 +7,28 @@
 	},
 	"name": "neptunesoftware-dxp-abb-collection",
 	"description": "DXP Collection Scenario",
-	"ver": "23.1.30.1517",
+	"ver": "23.2.7.1039",
 	"enableCICD": true,
-	"apps": [],
+	"apps": [
+		{
+			"id": "d0dbfeb4-9048-ed11-a27c-dc984005a2a9",
+			"application": "norsk_live_map",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "9a6f1680-8f4f-ed11-ade6-a085fc67ade0",
+			"application": "norsk_analytics",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "92070741-0e4a-ed11-a27c-dc984005a2a9",
+			"application": "norsk_driver_app",
+			"title": "",
+			"description": ""
+		}
+	],
 	"api": [
 		{
 			"id": "a69c3a67-3e49-ed11-a27c-dc984005a2a9",

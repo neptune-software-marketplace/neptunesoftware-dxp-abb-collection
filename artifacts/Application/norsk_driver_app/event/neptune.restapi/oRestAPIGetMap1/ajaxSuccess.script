@@ -1,0 +1,177 @@
+// var responseData = JSON.parse(xhr.responseText);
+
+// RESULT = responseData;
+
+// /*----------------------------------------------------*/
+// //Selecting the lat and long from the JSON for route 1
+// var latlong1 = RESULT[0].Waypoints.latlong1;
+// var latlong2 = RESULT[0].Waypoints.latlong2;
+// var latlong3 = RESULT[0].Waypoints.latlong3;
+// var latlong4 = RESULT[0].Waypoints.latlong4;
+// var latlong5 = RESULT[0].Waypoints.latlong5;
+// var latlong6 = RESULT[0].Waypoints.latlong6;
+// var latlong7 = RESULT[0].Waypoints.latlong7;
+// var latlong8 = RESULT[0].Waypoints.latlong8;
+// var latlong9 = RESULT[0].Waypoints.latlong9;
+// var latlong10 = RESULT[0].Waypoints.latlong10;
+
+// console.log(latlong1);
+// //Selecting the lat and long in the array
+// var lat1 = latlong1[0];
+// var long1 = latlong1[1];
+
+// var lat2 = latlong2[0];
+// var long2 = latlong2[1];
+
+// var lat3 = latlong3[0];
+// var long3 = latlong3[1];
+
+// var lat4 = latlong4[0];
+// var long4 = latlong4[1];
+
+// var lat5 = latlong5[0];
+// var long5 = latlong5[1];
+
+// var lat5 = latlong5[0];
+// var long5 = latlong5[1];
+
+// var lat6 = latlong6[0];
+// var long6 = latlong6[1];
+
+// var lat7 = latlong7[0];
+// var long7 = latlong7[1];
+
+// var lat8 = latlong8[0];
+// var long8 = latlong8[1];
+
+// var lat9 = latlong9[0];
+// var long9 = latlong9[1];
+
+// var lat10 = latlong10[0];
+// var long10 = latlong10[1];
+// /*----------------------------------------------------*/
+
+
+// /*----------------------------------------------------*/
+// //Selecting the lat and long from the JSON for route 2
+// var latlong11 = RESULT[1].Waypoints.latlong11;
+// var latlong12 = RESULT[1].Waypoints.latlong12;
+// var latlong13 = RESULT[1].Waypoints.latlong13;
+// var latlong14 = RESULT[1].Waypoints.latlong14;
+// var latlong15 = RESULT[1].Waypoints.latlong15;
+// var latlong16 = RESULT[1].Waypoints.latlong16;
+// var latlong17 = RESULT[1].Waypoints.latlong17;
+// var latlong18 = RESULT[1].Waypoints.latlong18;
+// var latlong19 = RESULT[1].Waypoints.latlong19;
+// var latlong20 = RESULT[1].Waypoints.latlong20;
+
+// //Selecting the lat and long in the array
+// var lat11 = latlong11[0];
+// var long11 = latlong11[1];
+
+// var lat12 = latlong12[0];
+// var long12 = latlong12[1];
+
+// var lat13 = latlong13[0];
+// var long13 = latlong13[1];
+
+// var lat14 = latlong14[0];
+// var long14 = latlong14[1];
+
+// var lat15 = latlong15[0];
+// var long15 = latlong15[1];
+
+// var lat15 = latlong15[0];
+// var long15 = latlong15[1];
+
+// var lat16 = latlong16[0];
+// var long16 = latlong16[1];
+
+// var lat17 = latlong17[0];
+// var long17 = latlong17[1];
+
+// var lat18 = latlong18[0];
+// var long18 = latlong18[1];
+
+// var lat19 = latlong19[0];
+// var long19 = latlong19[1];
+
+// var lat20 = latlong20[0];
+// var long20 = latlong20[1];
+// /*----------------------------------------------------*/
+
+
+
+// setTimeout(function () {
+
+//     Map = L.map(reference);
+//     console.log(Map);
+//     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//         attribution: '© OpenStreetMap contributors'
+//     }).addTo(Map);
+
+//     var route1 = L.Routing.control({
+//         waypoints: [
+//             L.latLng(lat1, long1),
+//             L.latLng(lat2, long2),
+//             L.latLng(lat3, long3),
+//             L.latLng(lat4, long4),
+//             L.latLng(lat5, long5),
+//             L.latLng(lat6, long6),
+//             L.latLng(lat7, long7),
+//             L.latLng(lat8, long8),
+//             L.latLng(lat9, long9),
+//             L.latLng(lat10, long10)
+//         ],
+//         lineOptions: {
+//             styles: [{ color: '#f36722', opacity: 1, weight: 5 }]
+//         },
+//         routeWhileDragging: true
+//     }).addTo(Map);
+
+//     var truck1 = L.icon({
+//         iconUrl: 'https://gtmdemosystem.neptune-software.cloud/media/root/Luuk%20W%C3%B6sten/Norsk%20gjenvinning/MicrosoftTeams-image (2).png',
+//         iconSize: [50, 27],
+//         iconAnchor: [22, 94],
+//         popupAnchor: [-3, -76],
+//         //shadowUrl: 'my-icon-shadow.png',
+//         shadowSize: [68, 95],
+//         shadowAnchor: [22, 94]
+//     });
+
+//     L.marker([59.91657019729567, 10.734337308348838], { icon: truck1 }).addTo(Map);
+
+//     var route2 = L.Routing.control({
+//         waypoints: [
+//             L.latLng(lat11, long11),
+//             L.latLng(lat12, long12),
+//             L.latLng(lat13, long13),
+//             L.latLng(lat14, long14),
+//             L.latLng(lat15, long15),
+//             L.latLng(lat16, long16),
+//             L.latLng(lat17, long17),
+//             L.latLng(lat18, long18),
+//             L.latLng(lat19, long19),
+//             L.latLng(lat20, long20)
+//         ],
+//         lineOptions: {
+//             styles: [{ color: 'red', opacity: 1, weight: 5 }]
+//         },
+//         routeWhileDragging: true
+//     }).addTo(Map);
+
+//     var truck2 = L.icon({
+//         iconUrl: 'https://gtmdemosystem.neptune-software.cloud/media/root/Luuk%20W%C3%B6sten/Norsk%20gjenvinning/MicrosoftTeams-image (2).png',
+//         iconSize: [50, 27],
+//         iconAnchor: [22, 54],
+//         popupAnchor: [-3, -76],
+//         //shadowUrl: 'my-icon-shadow.png',
+//         shadowSize: [68, 95],
+//         shadowAnchor: [22, 94]
+//     });
+
+//     L.marker([59.9280676225002, 10.807120441465358], { icon: truck2 }).addTo(Map);
+
+
+
+// }, 500);

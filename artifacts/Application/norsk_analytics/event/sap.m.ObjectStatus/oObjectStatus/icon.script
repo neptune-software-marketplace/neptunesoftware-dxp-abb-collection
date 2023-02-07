@@ -1,0 +1,14 @@
+if (typeof Status === "undefined" || Status === null || Status === "") { return; }  
+var formattedText = Status; 
+
+if(Status === "Completed"){
+    formattedText = "sap-icon://accept";
+}
+if(Status === "Unassigned"){
+    formattedText = "sap-icon://pending"
+}
+if(Status === "Assigned"){
+    formattedText = "sap-icon://fa-solid/truck"
+}
+ 
+return formattedText;
