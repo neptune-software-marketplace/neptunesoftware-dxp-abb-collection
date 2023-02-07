@@ -81,7 +81,13 @@
 			"name": "Collection_Services_Scenario"
 		}
 	],
-	"launchpad": [],
+	"launchpad": [
+		{
+			"id": "6eff7020-d3a6-ed11-a8e0-0022489f97c8",
+			"name": "Collection_launchpad",
+			"description": null
+		}
+	],
 	"certificates": [],
 	"role": [],
 	"systems": [],

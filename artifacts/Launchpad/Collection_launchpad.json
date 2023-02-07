@@ -1,0 +1,92 @@
+{
+	"id": "6eff7020-d3a6-ed11-a8e0-0022489f97c8",
+	"createdAt": "2023-02-07T10:35:24.100Z",
+	"createdBy": "cezar.strugariu@neptune-software.com",
+	"extUserRoles": [],
+	"extUserDepartments": [],
+	"catOrder": [
+		"718db7d1-d397-ed11-994a-0022489f9953"
+	],
+	"layout": [
+		{
+			"id": "e6984e0f-5df9-4d87-deb6-ec5e99fd2425",
+			"css": "",
+			"name": "Collection",
+			"active": true,
+			"style": "<style></style>"
+		}
+	],
+	"config": {
+		"enhancement": ""
+	},
+	"enhancement": [],
+	"name": "Collection_launchpad",
+	"title": "Collection ",
+	"description": null,
+	"startApp": null,
+	"startWebApp": null,
+	"customLogo": null,
+	"launchpadApp": "planet9_launchpad_standard",
+	"hideSidemenu": false,
+	"ui5Version": null,
+	"ui5Url": null,
+	"ui5Theme": null,
+	"header": [
+		"==OBJECT STRING==",
+		"<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.7.1/dist/leaflet.css\"",
+		"    integrity=\"sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==\"",
+		"    crossorigin=\"\" />",
+		"",
+		"<!-- Make sure you put this AFTER Leaflet's CSS -->",
+		"<script src=\"https://unpkg.com/leaflet@1.7.1/dist/leaflet.js\"",
+		"    integrity=\"sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==\"",
+		"    crossorigin=\"\"></script>",
+		"",
+		"<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.2.0/dist/leaflet.css\" />",
+		"<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css\" />",
+		"<script src=\"https://unpkg.com/leaflet@1.2.0/dist/leaflet.js\"></script>",
+		"<script src=\"https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js\"></script>",
+		"",
+		""
+	],
+	"customTheme": null,
+	"isExternal": false,
+	"emailPattern": null,
+	"loginApp": null,
+	"enableNotifications": false,
+	"firebaseProjectId": null,
+	"firebaseAppId": null,
+	"defaultLoginIDP": null,
+	"publicAccess": false,
+	"css": null,
+	"clientRequestTimeout": 120,
+	"limitWidth": false,
+	"searchBackgroundType": null,
+	"searchBackgroundColor": null,
+	"searchBackgroundShade": null,
+	"usedBackgroundType": null,
+	"usedBackgroundColor": null,
+	"usedBackgroundShade": null,
+	"searchEnableShadeCalc": null,
+	"usedEnableShadeCalc": null,
+	"enableTrace": false,
+	"ver": "23.2.7.1038",
+	"pwa_enable": false,
+	"pwa_customImageIos": null,
+	"pwa_customImageAndroidOld": null,
+	"pwa_customImageAndroidNew": null,
+	"pwa_displayMode": null,
+	"pwa_themeColor": "rgb(255,255,255)",
+	"pwa_backgroundColor": "rgb(255,255,255)",
+	"passwordResetEmail": null,
+	"activationCodeEmail": null,
+	"package": "e9b07409-4f9e-ed11-994a-0022489f9953",
+	"cat": [
+		{
+			"id": "718db7d1-d397-ed11-994a-0022489f9953",
+			"name": "Collection_Services_Scenario",
+			"title": "Collection",
+			"ver": "23.1.27.1430"
+		}
+	]
+}
